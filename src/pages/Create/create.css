@@ -1,0 +1,240 @@
+
+/* two rows, one for top bar one for everything else */
+.create-layout {
+    padding: 0px 25px;
+    display: grid;
+    grid-template-rows: repeat(2);
+}
+
+/* left col is the filtering and measures / fields */
+.create-layout-main-section {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: auto;
+    gap: 15px;
+}
+
+/* contains the left col, which has 
+the fields and measures col as well as the 
+filtering and customization column */
+.create-layout-left-column {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* for the right col, contains the input rows and cols
+as well as the actual display section for the graph */
+.create-layout-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.create-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 0px;
+    height: 70px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.create-topbar h1 {
+    font-weight: 500;
+    font-size: 1.3rem;  
+    margin-right: 25px;
+}
+
+.create-topbar-selections {
+    height: 45px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f0f2f6;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 0 5px;
+}
+
+.create-topbar-selection {
+    height: 85%;
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.create-topbar-selection:hover {
+    background-color: #f7f7f9;
+  }
+
+.create-topbar-selection--active {
+    height: 85%;
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 400;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px #e9e9e9
+  }
+
+.create-layout-main-section {
+    margin: 25px 0px;
+}
+
+.measures-and-fields-container {
+    /* hard code the height for now */
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.mf-container.measures {
+    margin-bottom: 20px;
+}
+
+.mf-heading {
+    color: rgb(124, 124, 124);
+    font-size: .8rem;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mf-option {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 6px;
+    background-color: #f9f9f9;
+    justify-content: space-between;
+}
+
+.mf-icon-and-label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.mf-option:hover {
+    background-color: #f0f2f6;
+}
+
+.mf-icon-and-label  span {
+    font-size: .8rem;
+}
+
+.mf-icon {
+    color: rgb(124, 124, 124);
+    padding-right: 5px;
+}
+
+.mf-icon.measure-icon {
+    font-size: 1.2rem;
+    width: 20px;
+}
+
+.mf-icon.field-icon {
+    font-size: .7rem;
+    width: 20px;
+
+}
+
+.drag-icon {
+    font-size: .8rem;
+}
+
+.rows-columns-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.row-col-input {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    height: 30px;
+    gap: 15px;
+    align-items: center;
+}
+
+.measure-field-header {
+    color: rgb(124, 124, 124);
+    font-size: .8rem;
+    width: 95px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.drag-over {
+    background-color: #f7f7f9;
+}
+
+.measure-field-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: .8rem;
+    background-color: #f7f7f9;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin: 2px 5px;
+    white-space: nowrap;
+    
+}
+
+.x-icon {
+    color: rgb(124, 124, 124);
+    font-size: .75rem;
+}
+
+.create-display-graph-container {
+    padding: 15px;
+    background-color: white;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    border-radius: 5px;
+}
+
+.create-display-graph-container  {
+    color: rgb(124, 124, 124);
+}
+
+.y-axis {
+    align-self: center;
+    transform: rotate(270deg);
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+.x-axis {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    color: black;
+
+}
+
+.mf-icon.field-icon {
+    color: #1b59f8;
+}
